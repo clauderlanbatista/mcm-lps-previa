@@ -4,8 +4,8 @@ MCM - Prévia das landing pages
 Abra o arquivo index.html desta pasta: ele tem os links para todas as páginas.
 
 É uma prévia de layout e navegação. As versões mostradas aqui ainda podem receber
-refinamentos pontuais de texto e de layout antes da versão final, que será apresentada
-no domínio oficial da MCM.
+refinamentos pontuais de layout antes da versão final, que será apresentada no domínio
+oficial da MCM.
 
 - Os formulários funcionam, mas nada do que for preenchido é enviado ou gravado.
 - O botão "Baixar o guia" ainda não tem o arquivo final.
