@@ -16,7 +16,9 @@
     a:hover { border-color: #C9995B; }
     strong { display: block; }
     small { display: block; margin-top: 4px; color: #C9995B; }
-    .aviso { margin-top: 28px; font-size: 13px; }
+    .aviso { margin-top: 28px; padding: 16px 20px; border-left: 3px solid #C9995B; border-radius: 12px; background: rgba(244, 240, 228, 0.06); font-size: 14px; }
+    .aviso p + p { margin-top: 10px; }
+    .aviso strong { display: inline; color: #F4F0E4; }
   </style>
 </head>
 <body>
@@ -29,7 +31,10 @@
         <li><a href="guia-carteira/"><strong>Sua carteira está organizada? Guia gratuito | MCM</strong><small>guia-carteira/index.html</small></a></li>
         <li><a href="guia-carteira/obrigado.html"><strong>Seu guia está pronto | MCM</strong><small>guia-carteira/obrigado.html</small></a></li>
     </ul>
-    <p class="aviso">Nesta prévia os formulários funcionam, mas nada do que for preenchido é enviado ou gravado. O arquivo do guia e o número do WhatsApp ainda não estão configurados.</p>
+    <div class="aviso">
+      <p><strong>Esta é uma prévia.</strong> As versões mostradas aqui ainda podem receber refinamentos pontuais de texto e de layout antes da versão final, que será apresentada no domínio oficial da MCM.</p>
+      <p>Os formulários funcionam, mas nada do que for preenchido é enviado ou gravado. O arquivo do guia e o número do WhatsApp ainda não estão configurados.</p>
+    </div>
   </main>
 </body>
 </html>
