@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Sua carteira está organizada? Guia gratuito | MCM</title>
+  <meta name="description" content="Bons investimentos não fazem, sozinhos, uma boa carteira. Baixe o guia gratuito da MCM e veja os sinais de que a sua precisa de revisão antes da próxima decisão." />
+  <meta name="theme-color" content="#001F36" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sua carteira está organizada? Guia gratuito da MCM" />
+  <meta property="og:description" content="Um checklist para saber se a sua carteira funciona como um sistema ou como uma coleção de produtos." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sua carteira está organizada? Guia gratuito da MCM" />
+  <meta name="twitter:description" content="Um checklist para saber se a sua carteira funciona como um sistema ou como uma coleção de produtos." />
+
+  <link rel="icon" type="image/svg+xml" href="../_shared/logo-mcm.svg" />
+  <!-- Fonte servida daqui mesmo: nenhuma requisição a terceiros antes do consentimento de cookies. -->
+  <link rel="preload" href="../_shared/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#" aria-label="MCM — início">
+        <img src="../_shared/logo-mcm.svg" alt="MCM Assessoria Patrimonial" width="123" height="46" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero + formulário ===== -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="card">
+          <div class="eyebrow">Guia gratuito · Diagnóstico de carteira</div>
+          <h1 class="h1 mt-4">Bons investimentos não fazem, sozinhos, <span class="text-gold">uma boa carteira.</span></h1>
+          <p class="lead mt-6 max-xl">Baixe o guia da MCM e veja, em um checklist direto, os sinais de que a sua carteira precisa de revisão antes da próxima decisão de investimento.</p>
+          <div class="chips mt-6">
+            <span class="chip">Visão patrimonial</span>
+            <span class="chip">Checklist prático</span>
+            <span class="chip">Material educativo</span>
+          </div>
+          <p class="destaque-faixa mt-7">O problema quase nunca está em um investimento isolado. Está na forma como as partes da carteira trabalham juntas, ou deixam de trabalhar.</p>
+        </div>
+
+        <div class="card--dark" id="form_guia">
+          <div class="eyebrow">Receba o guia</div>
+          <h2 class="h3 mt-2">Preencha e baixe na hora</h2>
+          <form class="form mt-6" novalidate data-form="guia">
+            <div>
+              <label class="eyebrow" for="form-field-firstname">Nome completo</label>
+              <input id="form-field-firstname" class="input-texto" name="firstname" type="text" autocomplete="name" placeholder="Seu nome" />
+              <div class="erro" data-erro="nome" hidden></div>
+            </div>
+            <div>
+              <label class="eyebrow" for="form-field-email">E-mail</label>
+              <input id="form-field-email" class="input-texto" name="email" type="email" inputmode="email" autocomplete="email" placeholder="voce@email.com" />
+              <div class="erro" data-erro="email" hidden></div>
+            </div>
+            <div>
+              <label class="eyebrow" for="form-field-phone">WhatsApp</label>
+              <input id="form-field-phone" class="input-texto" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 99999-9999" maxlength="16" />
+              <div class="erro" data-erro="telefone" hidden></div>
+            </div>
+            <div>
+              <label class="eyebrow" for="form-field-patrimonio">Patrimônio investido hoje</label>
+              <select id="form-field-patrimonio" class="input-texto" name="patrimonio" required>
+                <option value="">Selecione uma faixa</option>
+                <option value="0_50k">Abaixo de R$ 50 mil</option>
+                <option value="50k_300k">Entre R$ 50 mil e R$ 300 mil</option>
+                <option value="300k_500k">Entre R$ 300 mil e R$ 500 mil</option>
+                <option value="500k_1m">Entre R$ 500 mil e R$ 1 milhão</option>
+                <option value="1m_5m">Entre R$ 1 milhão e R$ 5 milhões</option>
+                <option value="5m_10m">Entre R$ 5 milhões e R$ 10 milhões</option>
+                <option value="10m_30m">Entre R$ 10 milhões e R$ 30 milhões</option>
+                <option value="30m_50m">Entre R$ 30 milhões e R$ 50 milhões</option>
+                <option value="50m_acima">Acima de R$ 50 milhões</option>
+              </select>
+              <div class="erro" data-erro="patrimonio" hidden></div>
+            </div>
+            <div class="hp" aria-hidden="true">
+              <label for="form-field-empresa">Empresa</label>
+              <input id="form-field-empresa" name="empresa" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+            <div>
+              <label class="check">
+                <input type="checkbox" name="lgpd" />
+                <span>Autorizo o contato da MCM por e-mail e WhatsApp e concordo com o tratamento dos meus dados conforme a <a href="#" data-config-href="LINK_PRIVACIDADE" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> (LGPD).</span>
+              </label>
+              <div class="erro" data-erro="lgpd" hidden></div>
+            </div>
+            <div class="erro" data-erro="geral" role="alert" hidden></div>
+            <button type="submit" class="btn btn--accent">Baixar o guia gratuito</button>
+            <p class="nota">Material educativo e gratuito. Não é oferta nem recomendação de investimento.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 01 · O diagnóstico ===== -->
+    <section class="section container">
+      <div class="card">
+        <div class="eyebrow">01 · O diagnóstico</div>
+        <h2 class="h2 mt-3 max-3xl">Diversificada no extrato. Desalinhada na prática.</h2>
+        <p class="body-text mt-4 max-3xl">É comum avaliar a carteira pela rentabilidade, pelo número de produtos ou pelo nome das instituições. Só que as perguntas que decidem o resultado são outras: haverá dinheiro disponível quando você precisar? O risco está de fato distribuído ou só espalhado em produtos diferentes? Os prazos combinam com os seus planos?</p>
+        <p class="body-text mt-3 max-3xl">Patrimônio não se perde apenas por falta de bons investimentos. Perde-se quando falta método, função e coordenação.</p>
+
+        <div class="grid-2 mt-6">
+          <div class="step">
+            <span class="step-num">01</span>
+            <strong>Concentração disfarçada</strong>
+            <small>Vários produtos, o mesmo risco. Tudo depende do mesmo indexador, emissor, país ou cenário econômico.</small>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <strong>Liquidez mal dimensionada</strong>
+            <small>Há patrimônio, mas não há dinheiro disponível na hora certa sem vender um ativo em má condição.</small>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <strong>Prazos incompatíveis</strong>
+            <small>O recurso de que você pode precisar em breve está preso em ativos de longo prazo ou de baixa liquidez.</small>
+          </div>
+          <div class="step">
+            <span class="step-num">04</span>
+            <strong>Produto sem plano</strong>
+            <small>Cada escolha fez sentido sozinha. Juntas, elas não respondem a um planejamento do seu patrimônio.</small>
+          </div>
+        </div>
+
+        <p class="destaque-faixa mt-6"><strong>Uma carteira não é uma coleção de produtos.</strong> É um sistema, e precisa funcionar como um.</p>
+      </div>
+    </section>
+
+    <!-- ===== 02 · O conteúdo ===== -->
+    <section class="section container">
+      <div class="card--dark">
+        <div class="eyebrow">02 · O conteúdo</div>
+        <h2 class="h2 mt-3">O que você vai encontrar no guia</h2>
+        <ol class="lista-num mt-6">
+          <li><span class="step-num">01</span><span>Por que bons produtos não garantem uma boa estratégia patrimonial.</span></li>
+          <li><span class="step-num">02</span><span>Como ler a carteira como um sistema, e não como uma lista de aplicações.</span></li>
+          <li><span class="step-num">03</span><span>Os riscos que não aparecem no extrato de carteiras que parecem bem montadas.</span></li>
+          <li><span class="step-num">04</span><span>Como reconhecer concentração, liquidez mal dimensionada e prazos incompatíveis.</span></li>
+          <li><span class="step-num">05</span><span>As perguntas que a carteira precisa responder antes de qualquer nova alocação.</span></li>
+          <li><span class="step-num">06</span><span>Um checklist rápido para saber se a sua merece uma revisão mais profunda.</span></li>
+          <li><span class="step-num">07</span><span>Quando vale buscar um olhar de fora sobre o conjunto do seu patrimônio.</span></li>
+        </ol>
+        <div class="mt-7">
+          <a class="btn btn--accent btn--inline" href="#form_guia" data-scroll-to="form_guia">Baixar o guia gratuito</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03 · Os critérios ===== -->
+    <section class="section container">
+      <div class="card">
+        <div class="eyebrow">03 · Os critérios</div>
+        <h2 class="h2 mt-3 max-3xl">Antes de trocar um investimento, entenda a função de cada parte.</h2>
+        <p class="body-text mt-4 max-3xl">A melhor carteira não é a que acumula mais fundos, produtos ou recomendações. É aquela em que cada parte do patrimônio tem um papel claro dentro do plano. O diagnóstico vem antes da decisão.</p>
+
+        <div class="grid-3 mt-6">
+          <div class="step">
+            <span class="step-num">01</span>
+            <strong>Objetivo</strong>
+            <small>Cada parte tem uma função definida: segurança, crescimento, renda futura, proteção da família, sucessão ou oportunidade?</small>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <strong>Horizonte de tempo</strong>
+            <small>Os prazos dos investimentos combinam com o momento em que o dinheiro poderá ser necessário?</small>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <strong>Liquidez</strong>
+            <small>Existe capital disponível para emergências, oportunidades, mudanças na família ou transições importantes?</small>
+          </div>
+          <div class="step">
+            <span class="step-num">04</span>
+            <strong>Diversificação real</strong>
+            <small>A carteira está diversificada de verdade ou espalhada em produtos que reagem ao mesmo cenário?</small>
+          </div>
+          <div class="step">
+            <span class="step-num">05</span>
+            <strong>Risco</strong>
+            <small>O nível de risco faz sentido para o seu patrimônio total, a sua renda e a sua disposição de manter a estratégia nos momentos ruins?</small>
+          </div>
+          <div class="step">
+            <span class="step-num">06</span>
+            <strong>Custos e tributação</strong>
+            <small>Taxas, impostos e a estrutura de sucessão estão entrando na conta do resultado final?</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Por que a MCM ===== -->
+    <section class="section container">
+      <div class="card">
+        <div class="eyebrow">Por que a MCM</div>
+        <h2 class="h2 mt-3 max-3xl">A MCM olha para a carteira como parte do patrimônio.</h2>
+        <p class="body-text mt-4 max-3xl">A MCM trabalha como uma assessoria patrimonial 360º: investimentos, imóveis, proteção e crédito analisados em conjunto, em vez de tratados em separado por banco, corretora, seguradora e contador.</p>
+        <p class="body-text mt-3 max-3xl">Por isso a carteira não é lida sozinha. Ela é entendida dentro do seu patrimônio total, da sua liquidez, da sua renda, dos objetivos da família, da sucessão e do seu momento de vida.</p>
+
+        <div class="grid-3 mt-6">
+          <div class="tile">
+            <strong>Clareza</strong>
+            <small>Entender a situação atual: o que você tem, para que serve cada parte e onde estão os pontos de atenção.</small>
+          </div>
+          <div class="tile">
+            <strong>Estruturação</strong>
+            <small>Organizar as estruturas necessárias para que as decisões passem a responder a um mesmo plano.</small>
+          </div>
+          <div class="tile">
+            <strong>Crescimento</strong>
+            <small>Tomar as decisões de alocação com o patrimônio já coordenado, e não uma a uma.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Próximo passo ===== -->
+    <section class="section container">
+      <div class="card--dark">
+        <div class="eyebrow">Próximo passo</div>
+        <h2 class="h2 mt-3 max-3xl">Quer saber se a sua carteira está organizada para o seu momento de vida?</h2>
+        <p class="body-text mt-4 max-3xl">Depois de baixar o guia, você pode pedir uma conversa com a MCM para entender se a sua carteira merece uma análise mais profunda.</p>
+        <p class="body-text mt-3 max-3xl">A conversa parte dos seus objetivos, da sua liquidez, dos seus riscos e da estrutura que você já tem, e não de um produto.</p>
+        <div class="mt-7">
+          <a class="btn btn--accent btn--inline" href="#form_guia" data-scroll-to="form_guia">Quero o guia</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section container">
+      <div class="card">
+        <div class="eyebrow">FAQ</div>
+        <h2 class="h2 mt-3">Perguntas frequentes</h2>
+        <div class="faq mt-6">
+          <details>
+            <summary>O guia recomenda investimentos específicos?</summary>
+            <p>Não. É um material educativo para ajudar você a avaliar a estrutura da sua carteira. Ele não traz recomendação individual de ativos, fundos ou produtos financeiros.</p>
+          </details>
+          <details>
+            <summary>Para quem este material é indicado?</summary>
+            <p>Para quem já construiu renda e patrimônio e quer saber se a carteira está coerente com seus objetivos, sua liquidez, seus riscos, a sucessão e a proteção da família.</p>
+          </details>
+          <details>
+            <summary>Preciso ter investimentos em várias instituições?</summary>
+            <p>Não. O guia serve tanto para quem concentra tudo em uma instituição quanto para quem tem recursos distribuídos entre bancos, corretoras, fundos, previdência e outros ativos.</p>
+          </details>
+          <details>
+            <summary>O guia substitui uma análise personalizada?</summary>
+            <p>Não. O conteúdo ajuda a identificar sinais de desalinhamento. Uma análise individual exige avaliar o seu patrimônio, seus objetivos, seu perfil, a estrutura da sua família, a liquidez e os riscos do seu caso.</p>
+          </details>
+          <details>
+            <summary>A MCM vai sugerir trocar a minha carteira?</summary>
+            <p>Não necessariamente. O primeiro passo é entender se a carteira atual faz sentido dentro do seu planejamento. Qualquer sugestão vem depois de um diagnóstico claro.</p>
+          </details>
+          <details>
+            <summary>O que acontece depois que eu baixo o guia?</summary>
+            <p>Você recebe o acesso na hora, na página seguinte. A MCM pode entrar em contato pelo e-mail ou WhatsApp informados para saber se você quer conversar sobre a sua carteira.</p>
+          </details>
+          <details>
+            <summary>Isto é uma recomendação de investimento?</summary>
+            <p>Não. O conteúdo é educativo e não substitui a análise individual feita por um profissional habilitado.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Aviso legal ===== -->
+    <section class="legal container">
+      <p class="nota">Este material tem caráter exclusivamente educativo e informativo. Não constitui oferta, proposta de contratação, promessa ou garantia de rentabilidade, nem recomendação personalizada de investimento. Decisões de investimento dependem da análise do perfil, dos objetivos e da situação patrimonial de cada pessoa.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-logo" href="#" aria-label="MCM — início">
+          <img src="../_shared/logo-mcm.svg" alt="MCM Assessoria Patrimonial" width="118" height="44" loading="lazy" />
+        </a>
+        <p class="footer-assinatura">Transformando planos em legados.</p>
+        <p class="footer-texto">Organização, estruturação, proteção e crescimento patrimonial.</p>
+      </div>
+    </div>
+    <div class="container footer-base">
+      © <span data-ano>2026</span> MCM. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

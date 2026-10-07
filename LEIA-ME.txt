@@ -1,0 +1,14 @@
+MCM - Prévia das landing pages
+==============================
+
+Abra o arquivo index.html desta pasta: ele tem os links para todas as páginas.
+
+É uma prévia de layout e navegação:
+
+- Os formulários funcionam, mas nada do que for preenchido é enviado ou gravado.
+- O botão "Baixar o guia" ainda não tem o arquivo final.
+- Os botões de WhatsApp ainda não têm o número.
+- Aberta direto do computador, a página pode usar a fonte padrão do sistema em vez
+  da fonte final. No site publicado a fonte é a definitiva.
+
+Mantenha todas as pastas juntas: as páginas usam a logo e os arquivos da pasta _shared.
